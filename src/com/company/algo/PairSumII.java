@@ -1,7 +1,5 @@
 package com.company.algo;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -29,7 +27,7 @@ import java.util.Arrays;
  * Sample Output
  *  [-1, 11] // the numbers could be in reverse order
  */
-public class PairSum {
+public class PairSumII {
     public static void main(String[] args) {
         int[] input = {3, 5, -4, 8, 11, 1, -1, 6, 2};
         int expect = 10;
