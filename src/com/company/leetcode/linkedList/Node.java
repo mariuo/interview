@@ -1,4 +1,4 @@
-package com.company.linkedList;
+package com.company.leetcode.linkedList;
 class Node<T> {
     T value;
     Node<T> next;
