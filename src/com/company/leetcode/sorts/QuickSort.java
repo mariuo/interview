@@ -1,11 +1,11 @@
 package com.company.leetcode.sorts;
 
 /*
-QUICKSORT Divide and Concker
+QUICKSORT Divide and Conquer
  */
 public class QuickSort {
     public static void main(String[] args) {
-        int[] arr = new int[]{5,2,3,4,1};
+        int[] arr = new int[]{5,3,2,1,4};
         quickSort(arr, 0, arr.length-1);
         for(int num : arr){
             System.out.print(num);
@@ -21,10 +21,10 @@ public class QuickSort {
     static int partition(int[] arr, int left, int right){
         var pivot = arr[right];
         var i = left-1;
-        for(int j = left; j< right; j++){
-            if(arr[j] < pivot){
+        for(int l = left; l < right; l++){
+            if(arr[l] < pivot){
                 i++;
-                change(arr,i,j);
+                change(arr,i,l);
             }
         }
         change(arr, i + 1, right);
