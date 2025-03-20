@@ -113,9 +113,10 @@ public class PayPalProductDiscount {
                 }else if(subtraction.containsKey(tag)){
                     currentPrice = price - subtraction.get(tag);
                 }
-                if(currentPrice > 0){
-                    bestPrice = Math.min(bestPrice, currentPrice);
+                if (currentPrice < 0) {
+                    currentPrice = price;
                 }
+                bestPrice = Math.min(bestPrice, currentPrice);
             }
             total += bestPrice;
         }
