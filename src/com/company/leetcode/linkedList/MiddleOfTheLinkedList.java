@@ -21,8 +21,8 @@ public class MiddleOfTheLinkedList {
 
     public static void main(String[] args) {
 
-        ListNode listNode2 = new com.company.leetcode.linkedList.ListNode(1,new com.company.leetcode.linkedList.ListNode(2, new com.company.leetcode.linkedList.ListNode(3, new com.company.leetcode.linkedList.ListNode(4, new com.company.leetcode.linkedList.ListNode(5)))));
-        ListNode listNode3 = new com.company.leetcode.linkedList.ListNode(1,new com.company.leetcode.linkedList.ListNode(2, new com.company.leetcode.linkedList.ListNode(3, new com.company.leetcode.linkedList.ListNode(4, new com.company.leetcode.linkedList.ListNode(5, new ListNode(6))))));
+        ListNode listNode2 = new ListNode(1,new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
+        ListNode listNode3 = new ListNode(1,new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6))))));
         ListNode listNode;
         listNode = middleNode(listNode2);
         System.out.println("Example 1");
